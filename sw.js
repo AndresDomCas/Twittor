@@ -1,7 +1,7 @@
 /* APP SHELL */
 
 //Importando scripts que se ubican en otra carpeta
-importScripts('/pwa/06-twittor/js/sw-utils.js'); //Se añade al app shell
+importScripts('js/sw-utils.js'); //Se añade al app shell
 
 //Declaracion de 3 variables para segmentar los caches 
 const CACHE_STATIC_NAME    = 'static-v0.2';
@@ -11,17 +11,17 @@ const CACHE_INMUTABLE_NAME = 'inmutable-v0.1';
 
 //Contenido necesario de la app shell para que la aplicacion o web funcione
 const APP_SHELL = [
-    '/pwa/06-twittor/',
-    '/pwa/06-twittor/index.html',
-    '/pwa/06-twittor/css/style.css',
-    '/pwa/06-twittor/img/favicon.ico',
-    '/pwa/06-twittor/img/avatars/hulk.jpg',
-    '/pwa/06-twittor/img/avatars/ironman.jpg',
-    '/pwa/06-twittor/img/avatars/spiderman.jpg',
-    '/pwa/06-twittor/img/avatars/thor.jpg',
-    '/pwa/06-twittor/img/avatars/wolverine.jpg',
-    '/pwa/06-twittor/js/app.js',
-    '/pwa/06-twittor/js/sw-utils.js'
+    '/',
+    '/index.html',
+    '/css/style.css',
+    '/img/favicon.ico',
+    '/img/avatars/hulk.jpg',
+    '/img/avatars/ironman.jpg',
+    '/img/avatars/spiderman.jpg',
+    '/img/avatars/thor.jpg',
+    '/img/avatars/wolverine.jpg',
+    '/js/app.js',
+    '/js/sw-utils.js'
 ];
 
 //Contenido que no se va a modificar jamas
@@ -29,8 +29,8 @@ const APP_SHELL_INMUTABLE = [
     'https://fonts.googleapis.com/css?family=Quicksand:300,400',
     'https://fonts.googleapis.com/css?family=Lato:400,300',
     'https://use.fontawesome.com/releases/v5.3.1/css/all.css',
-    '/pwa/06-twittor/css/animate.css',
-    '/pwa/06-twittor/js/libs/jquery.js'
+    '/css/animate.css',
+    '/js/libs/jquery.js'
 ];
 
 //Instalacion del service worker
