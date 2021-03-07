@@ -1,7 +1,18 @@
+//Validar la url para el localhost o en otor dominio
+var url = window.location.href;
+var swLocation = "/Twittor/sw.js";
+
+
 //Service worker validar si el navegador lo soporta
 if ( navigator.serviceWorker ) {
-    navigator.serviceWorker.register('/sw.js');
+
+    if ( url.includes('localhost') ) {
+        swLocation='/pwa/06-twittor/sw.js';
+    }
+
+    navigator.serviceWorker.register(swLocation);
 }
+
 
 
 // Referencias de jQuery
