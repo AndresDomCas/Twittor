@@ -1,6 +1,6 @@
 //Service worker validar si el navegador lo soporta
 if ( navigator.serviceWorker ) {
-    navigator.serviceWorker.register('/pwa/06-twittor/sw.js');
+    navigator.serviceWorker.register('/sw.js');
 }
 
 
