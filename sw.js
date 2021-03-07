@@ -11,17 +11,17 @@ const CACHE_INMUTABLE_NAME = 'inmutable-v0.1';
 
 //Contenido necesario de la app shell para que la aplicacion o web funcione
 const APP_SHELL = [
-    '/',
-    '/index.html',
-    '/css/style.css',
-    '/img/favicon.ico',
-    '/img/avatars/hulk.jpg',
-    '/img/avatars/ironman.jpg',
-    '/img/avatars/spiderman.jpg',
-    '/img/avatars/thor.jpg',
-    '/img/avatars/wolverine.jpg',
-    '/js/app.js',
-    '/js/sw-utils.js'
+    //'/',
+    'index.html',
+    'css/style.css',
+    'img/favicon.ico',
+    'img/avatars/hulk.jpg',
+    'img/avatars/ironman.jpg',
+    'img/avatars/spiderman.jpg',
+    'img/avatars/thor.jpg',
+    'img/avatars/wolverine.jpg',
+    'js/app.js',
+    'js/sw-utils.js'
 ];
 
 //Contenido que no se va a modificar jamas
@@ -29,8 +29,8 @@ const APP_SHELL_INMUTABLE = [
     'https://fonts.googleapis.com/css?family=Quicksand:300,400',
     'https://fonts.googleapis.com/css?family=Lato:400,300',
     'https://use.fontawesome.com/releases/v5.3.1/css/all.css',
-    '/css/animate.css',
-    '/js/libs/jquery.js'
+    'css/animate.css',
+    'js/libs/jquery.js'
 ];
 
 //Instalacion del service worker
