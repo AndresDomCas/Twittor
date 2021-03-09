@@ -5,7 +5,7 @@ importScripts('js/sw-utils.js'); //Se añade al app shell
 
 //Declaracion de 3 variables para segmentar los caches 
 const CACHE_STATIC_NAME    = 'static-v0.2';
-const CACHE_DYNAMIC_NAME   = 'dynamic-V0.1';
+const CACHE_DYNAMIC_NAME   = 'dynamic-V0.2';
 const CACHE_DYNAMIC_LIMIT  = 50;
 const CACHE_INMUTABLE_NAME = 'inmutable-v0.1';
 
@@ -56,6 +56,12 @@ self.addEventListener('activate',e=>{
                 //Aqui se eliminara si es una version diferente de la reciente
                 return caches.delete(key);
             }
+
+            if (key !== CACHE_DYNAMIC_NAMEs && key.includes('dynamic')) {
+                //Aqui se eliminara si es una version diferente de la reciente
+                return caches.delete(key);
+            }
+
         });
     });
 
