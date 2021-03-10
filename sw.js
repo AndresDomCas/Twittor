@@ -57,7 +57,7 @@ self.addEventListener('activate',e=>{
                 return caches.delete(key);
             }
 
-            if (key !== CACHE_DYNAMIC_NAMEs && key.includes('dynamic')) {
+            if (key !== CACHE_DYNAMIC_NAME && key.includes('dynamic')) {
                 //Aqui se eliminara si es una version diferente de la reciente
                 return caches.delete(key);
             }
